@@ -1,0 +1,37 @@
+.others-causes{
+  font-family: 'PTSansWebRegular',Arial,sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+
+  background-color: $bg-main;
+  color: $ft-others-cause;
+}
+
+.others-causes__list{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.others-causes__header{
+  padding: 0;
+  margin: 0;
+
+  font-family: 'PTSansWebBold',Arial,sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+
+  text-transform: uppercase;
+}
+
+.others-causes__text{
+  padding: 0;
+  margin: 0;
+
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 21px;
+
+  color: $ft-others-cause-text;
+  text-transform: uppercase;
+}

@@ -1,0 +1,15 @@
+.city{
+  font-family: 'PTSansWebRegular',Arial,sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+
+  background-color: $bg-city;
+  color: $ft-city-text;
+}
+
+.city__list{
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}

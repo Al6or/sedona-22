@@ -1,0 +1,68 @@
+.hotel{
+  font-family: 'PTSansWebRegular',Arial,sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+
+  background-color: $bg-hotel;
+  color: $ft-hotel;
+}
+
+.hotel__header{
+  padding: 0;
+  margin: 0;
+
+  font-family: 'PTSansWebBold',Arial,sans-serif;
+  font-size: 21px;
+  line-height: 26px;
+
+  text-transform: uppercase;
+}
+
+.hotel__text{
+  padding: 0;
+  margin: 0;
+
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 24px;
+
+  color: $ft-hotel-text;
+  text-transform: uppercase;
+}
+
+.hotel__button{
+  padding: 0;
+  margin: 0;
+
+  font-family: 'PTSansWebBold',Arial,sans-serif;
+  font-size: 21px;
+  line-height: 26px;
+
+  text-transform: uppercase;
+  border: none;
+}
+
+.hotel__button--blue{
+  background-color: $bg-blue;
+
+  color: $ft-blue;
+}
+
+.hotel__button--blue:hover,
+.hotel__button--blue:focus{
+  background-color: $bg-blue-hover;
+
+  color:$ft-blue-hover;
+}
+
+.hotel__button--blue:active{
+  background-color: $bg-blue-down;
+
+  color: $ft-blue-down;
+}
+
+.hotel__button--blue:disabled{
+  background-color: $bg-blue-disabled;
+
+  color: $ft-blue-disabled;
+}

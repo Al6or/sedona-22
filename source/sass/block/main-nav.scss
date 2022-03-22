@@ -1,0 +1,40 @@
+.site-list{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.site-list__item a{
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 26px;
+
+  text-transform: uppercase;
+  color: $ft-menu;
+}
+
+.site-list__item a:link{
+  color: $ft-menu;
+}
+
+.site-list__item a:hover,
+.site-list__item a:focus{
+  color: $ft-menu-hover;
+}
+
+.site-list__item a:active{
+  color:$ft-menu-down;
+}
+
+.site-list__item a:visited{
+  color:$ft-menu-active;
+}
+
+.site-list__item a:visited:hover,
+.site-list__item a:visited:focus{
+  color: $ft-menu-active-hover;
+}
+
+.site-list__item a:visited:active{
+  color: $ft-menu-active-down;
+}

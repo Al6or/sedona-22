@@ -1,0 +1,30 @@
+.meaning{
+  font-family: 'PTSansWebRegular',Arial,sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+
+  background-color: $bg-meaning;
+}
+
+.meaning__header{
+  padding: 0;
+  margin: 0;
+
+  font-family: 'PTSansWebBold',Arial,sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+
+  text-transform: uppercase;
+}
+
+.meaning__text{
+  padding: 0;
+  margin: 0;
+
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 26px;
+
+  text-transform: uppercase;
+  color: $ft-meaning-text;
+}

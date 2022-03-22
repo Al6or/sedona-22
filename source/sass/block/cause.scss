@@ -1,0 +1,23 @@
+.cause{
+  font-family: 'PTSansWebRegular',Arial,sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+
+  background-color: $bg-cause;
+  color: $ft-cause;
+}
+
+.cause__header{
+  padding: 0;
+  margin: 0;
+
+  font-family: 'PTSansWebBold',Arial,sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+
+  text-transform: uppercase;
+}
+
+.cause__text{
+  text-transform: uppercase;
+}
