@@ -3,57 +3,64 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Sedona</title>
+  <link rel="stylesheet" href="css/style.css">
+  <title>Форма отзыва</title>
 </head>
 
 <body>
 
-  <header class="page-header">
-    <a class="page-header__logo" href="">
-      <img class="page-header__logo-image" src="" alt="Логотип Седоны">
-    </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
-        Открыть меню
-      </button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
-            <a>Главная</a>
-          </li>
-          <li class="site-list__item site-list__item--active">
-            <a href="#">Фото и видео</a>
-          </li>
-          <li class="site-list__item site-list__item--active">
-            <a href="#">Форма и отзыва</a>
-          </li>
-          <li class="site-list__item site-list__item--active">
-            <a href="#">html academy</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+  <header class="page-header container">
+    <div class="page-header__wrapper">
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          Открыть меню
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a href="photo.html">Фото и видео</a>
+            </li>
+            <li class="site-list__item">
+              <a>Форма и отзыва</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">html academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <a class="page-header__logo" href="">
+        <img class="page-header__logo-image" src="https://via.placeholder.com/102x83" alt="Логотип Седоны">
+      </a>
+    </div>
   </header>
 
-  <main>
+  <main class="container">
     <h1 class="visually-hidden">Форма отзыва туриста</h1>
 
     <form action="https://echo.htmlacademy.ru" target="_blank">
 
-      <section class="intro-short">
-        <h2 class="intro-short__header">Оставьте свой отзыв</h2>
-        <p class="intro-short__text">
-          Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
-        </p>
-        <img class="intro-short__text-image" src="" alt="Короткое интро, текст с картинкой">
+      <section class="intro">
+        <img class="intro__text-image" src="https://via.placeholder.com/229x39"
+          alt="Картинка. Стильное название проекта">
+      </section>
+
+      <section class="meaning">
+        <h2 class="meaning__header">Оставьте свой отзыв</h2>
+        <p class="meaning__text"> Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами
+          достопримечательностях</p>
       </section>
 
       <section class="represent">
+       <div class="represent__turist-name">
         <h2 class="represent__header">Представьтесь:</h2>
         <ul class="represent__list">
           <li class="represent__item">
             <label for="id-first-name">Имя*:</label>
-            <input id="id-first-name" type="text" name="first-name" placeholder="Петр">
+            <input id="id-first-name" type="text" name="first-name" value="Петр">
           </li>
           <li class="represent__item">
             <label for="id-second-name">Фамилия*:</label>
@@ -64,20 +71,20 @@
             <input id="id-last-name" type="text" name="last-name" placeholder="Александрович">
           </li>
         </ul>
-      </section>
-
-      <section class="contact">
-        <h2 class="contact__header">Контактная информация:</h2>
-        <ul class="contact__list">
-          <li class="contact__item">
-            <label for="id-phone">Контактный телефон*:</label>
-            <input id="id-phone" type="text" name="phone" placeholder="Введите телефон">
-          </li>
-          <li class="contact__item">
-            <label for="id-email">Электронная почта*:</label>
-            <input id="id-email" type="text" name="email" placeholder="Введите e-mail">
-          </li>
-        </ul>
+       </div>
+        <div class="represent__contact">
+          <h2 class="represent__header">Контактная информация:</h2>
+          <ul class="represent__list">
+            <li class="represent__item represent__item--phone">
+              <label for="id-phone">Контактный телефон*:</label>
+              <input id="id-phone" type="text" name="phone" placeholder="Введите телефон">
+            </li>
+            <li class="represent__item represent__item--email">
+              <label for="id-email">Электронная почта*:</label>
+              <input id="id-email" type="text" name="email" value="Введите e-mail">
+            </li>
+          </ul>
+        </div>
       </section>
 
       <section class="impress">
@@ -125,31 +132,34 @@
         <label class="visually-hidden" for="id-emotion-text">Поле с описанием ваших эмоций</label>
         <textarea class="emotion__description" name="emotion-text" id="id-emotion-text" cols="30" rows="10"
           placeholder="Опишите подробно все свои восторги "></textarea>
-        <button class="emotion__button">Отправить отзыв</button>
+        <button class="emotion__button emotion__button--blue">Отправить отзыв</button>
+        <span class="emotion__bond">* — обязательные поля</span>
       </section>
     </form>
   </main>
 
-  <footer class="page-footer">
-    <div class="page-footer__tags">
-      <b class="">#visitSEDONA</b>
-    </div>
-    <div class="page-footer__social social">
-      <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link social__link--vkontakte" href="">Мы в Вконтакте</a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--facebook" href="">Мы в Фейсбук</a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--instagram" href="">Мы в Инстаграм</a>
-        </li>
-      </ul>
-    </div>
-    <div class="page-footer__dev dev">
-      <p class="dev__text">Разработано</p>
-      <img class="dev__logo" src="" alt="">
+  <footer class="page-footer container">
+    <div class="page-footer__wrapper">
+      <div class="page-footer__tags">
+        #visitSEDONA
+      </div>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte social__link--blue" href="">Мы в Вконтакте</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook social__link--blue" href="">Мы в Фейсбук</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--instagram social__link--blue" href="">Мы в Инстаграм</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__dev dev">
+        <p class="dev__text">Разработано</p>
+        <img class="dev__logo" src="https://via.placeholder.com/27x34" alt="Логотип организации">
+      </div>
     </div>
   </footer>
 

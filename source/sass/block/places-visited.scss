@@ -1,0 +1,26 @@
+.places-visited{
+  font-family: 'PTSansWebBold',Arial,sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+
+  background-color: $bg-main;
+  color: $ft-container;
+}
+
+.places-visited__header{
+  padding: 0;
+  margin: 0;
+
+  font-family: 'PTSansWebBold',Arial,sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+
+  text-transform: uppercase;
+}
+
+.places-visited__list{
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}

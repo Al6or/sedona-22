@@ -3,107 +3,116 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Sedona</title>
+  <link rel="stylesheet" href="css/style.css">
+  <title>Страница фото и видео</title>
 </head>
 
 <body>
 
-  <header class="page-header">
-    <a class="page-header__logo" href="">
-      <img class="page-header__logo-image" src="" alt="Логотип Седоны">
-    </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
-        Открыть меню
-      </button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
-            <a>Главная</a>
-          </li>
-          <li class="site-list__item site-list__item--active">
-            <a href="#">Фото и видео</a>
-          </li>
-          <li class="site-list__item site-list__item--active">
-            <a href="#">Форма и отзыва</a>
-          </li>
-          <li class="site-list__item site-list__item--active">
-            <a href="#">html academy</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+  <header class="page-header container">
+    <div class="page-header__wrapper">
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          Открыть меню
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a>Фото и видео</a>
+            </li>
+            <li class="site-list__item">
+              <a href="form.html">Форма и отзыва</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">html academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <a class="page-header__logo" href="">
+        <img class="page-header__logo-image" src="https://via.placeholder.com/102x83" alt="Логотип Седоны">
+      </a>
+    </div>
   </header>
 
-  <main>
-    <h1 class="visually-hidden">Страница Фото и Видео</h1>
+  <main class="container">
+    <h1 class="visually-hidden">Страница на который есть видео и фото туристов</h1>
 
-    <section class="intro-short">
-      <h2 class="intro-short__header">Фото и видео</h2>
-      <p class="intro-short__text">
-        Не можете решиться на путешествие из-за курса?
+    <section class="intro">
+      <img class="intro__text-image" src="https://via.placeholder.com/229x39"
+        alt="Картинка. Стильное название проекта">
+    </section>
+
+    <section class="meaning">
+      <h2 class="meaning__header">Фото и видео</h2>
+      <p class="meaning__text"> Не можете решиться на путешествие из-за курса?
         Фотографии помогут вам забыть о политике и экономике.</p>
-      <img class="intro-short__text-image" src="" alt="Короткое интро, текст с картинкой">
     </section>
 
     <section class="photo">
       <h2 class="visually-hidden">Список фотографий города с не большим описанием</h2>
       <ul class="photo__list">
         <li class="photo__item photo__item--fisrt">
-          <h3>Неродные просторы</h3>
-          <p>Автор фото: Борис</p>
-          <span>1350</span>
-          <img src="" alt="Фото, закат,дорога,холмы">
+          <h3 class="photo__header">Неродные просторы</h3>
+          <p class="photo__text">Автор фото: Борис</p>
+          <span class="photo__like">1350</span>
+          <img src="https://via.placeholder.com/280x280" alt="Фото, закат,дорога,холмы">
         </li>
         <li class="photo__item">
-          <h3>Местная растительность</h3>
-          <p>Автор фото: Сергей</p>
-          <span>143</span>
-          <img src="" alt="Фото, кактус в расцвете">
+          <h3 class="photo__header">Местная растительность</h3>
+          <p class="photo__text">Автор фото: Сергей</p>
+          <span class="photo__like">143</span>
+          <img src="https://via.placeholder.com/280x280" alt="Фото, кактус в расцвете">
         </li>
         <li class="photo__item">
-          <h3>Дорога на север</h3>
-          <p>Автор фото: Петр</p>
-          <span>96</span>
-          <img src="" alt="Фото, дорога и лес">
+          <h3 class="photo__header">Дорога на север</h3>
+          <p class="photo__text">Автор фото: Петр</p>
+          <span class="photo__like">96</span>
+          <img src="https://via.placeholder.com/280x280" alt="Фото, дорога и лес">
         </li>
         <li class="photo__item">
-          <h3>Мост дьявола</h3>
-          <p>Автор фото: Антон</p>
-          <span>254</span>
-          <img src="" alt="Фото, мост и скалы">
+          <h3 class="photo__header">Мост дьявола</h3>
+          <p class="photo__text">Автор фото: Антон</p>
+          <span class="photo__like">254</span>
+          <img src="https://via.placeholder.com/280x280" alt="Фото, мост и скалы">
         </li>
       </ul>
     </section>
 
     <section class="video">
       <h2 class="video__header">Все еще сомневатесь?</h2>
-      <p class="video__text"></p>
-      <video src="" class="video__presentation"></video>
+      <p class="video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+      <img class="video__img" src="https://via.placeholder.com/320x201" alt="Кадр прекрасного видео">
+      <a class="video__button"><span class="visually-hidden">Запустить видео</span></a>
     </section>
 
   </main>
 
-  <footer class="page-footer">
-    <div class="page-footer__tags">
-      <b class="">#visitSEDONA</b>
-    </div>
-    <div class="page-footer__social social">
-      <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link social__link--vkontakte" href="">Мы в Вконтакте</a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--facebook" href="">Мы в Фейсбук</a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--instagram" href="">Мы в Инстаграм</a>
-        </li>
-      </ul>
-    </div>
-    <div class="page-footer__dev dev">
-      <p class="dev__text">Разработано</p>
-      <img class="dev__logo" src="" alt="">
+  <footer class="page-footer container">
+    <div class="page-footer__wrapper">
+      <div class="page-footer__tags">
+        #visitSEDONA
+      </div>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte social__link--blue" href="">Мы в Вконтакте</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook social__link--blue" href="">Мы в Фейсбук</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--instagram social__link--blue" href="">Мы в Инстаграм</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__dev dev">
+        <p class="dev__text">Разработано</p>
+        <img class="dev__logo" src="https://via.placeholder.com/27x34" alt="Логотип организации">
+      </div>
     </div>
   </footer>
 

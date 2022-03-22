@@ -1,0 +1,38 @@
+.photo{
+  font-family: 'PTSansWebRegular',Arial,sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+
+  background-color: $bg-main;
+  color: $ft-main;
+}
+
+.photo__list{
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
+.photo__header{
+  padding: 0;
+  margin: 0;
+
+  font-family: 'PTSansWebBold',Arial,sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+
+  color: $ft-container;
+  text-transform: uppercase;
+}
+
+.photo__like{
+  padding: 0;
+  margin: 0;
+
+  font-family: 'PTSansWebBold',Arial,sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+
+  color: $ft-container;
+}

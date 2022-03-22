@@ -1,0 +1,91 @@
+.emotion{
+  font-family: 'PTSansWebRegular',Arial,sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+
+  background-color: $bg-main;
+  color: $ft-main;
+  text-transform: uppercase;
+}
+
+.emotion__header{
+  padding: 0;
+  margin: 0;
+
+  font-family: 'PTSansWebBold',Arial,sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+
+  color: $ft-container;
+  text-transform: uppercase;
+}
+
+.emotion__bond{
+  font-family: 'PTSansWebRegular',Arial,sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+
+  background-color: $bg-main;
+  color: $ft-main;
+  text-transform: uppercase;
+}
+
+.emotion__description{
+  font-family: 'PTSansWebBold',Arial,sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+
+  background-color: $bg-container;
+  color: $ft-container;
+  text-transform: none;
+  border: 0;
+}
+
+.emotion__description:hover{
+  background-color: $bg-input-hover;
+  color: $ft-container;
+}
+
+.emotion__description:active,
+.emotion__description:focus{
+  background-color: $bg-main;
+  border: 4px solid $bg-input-hover;
+}
+
+.emotion__button{
+  padding: 0;
+  margin: 0;
+  display: block;
+
+  font-family: 'PTSansWebBold',Arial,sans-serif;
+  font-size: 21px;
+  line-height: 26px;
+
+  text-transform: uppercase;
+  border: none;
+}
+
+.emotion__button--blue{
+  background-color: $bg-blue;
+
+  color: $ft-blue;
+}
+
+.emotion__button--blue:hover,
+.emotion__button--blue:focus{
+  background-color: $bg-blue-hover;
+
+  color:$ft-blue-hover;
+}
+
+.emotion__button--blue:active{
+  background-color: $bg-blue-down;
+
+  color: $ft-blue-down;
+}
+
+.emotion__button--blue:disabled{
+  background-color: $bg-blue-disabled;
+
+  color: $ft-blue-disabled;
+}

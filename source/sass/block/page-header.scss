@@ -5,28 +5,3 @@
 
   background-color: $bg-menu;
 }
-
-.social__link--blue{
-  background-color: $bg-blue;
-
-  color: $ft-blue;
-}
-
-.social__link--blue:hover,
-.social__link--blue:focus{
-  background-color: $bg-blue-hover;
-
-  color:$ft-blue-hover;
-}
-
-.social__link--blue:active{
-  background-color: $bg-blue-down;
-
-  color: $ft-blue-down;
-}
-
-.social__link--blue:disabled{
-  background-color: $bg-blue-disabled;
-
-  color: $ft-blue-disabled;
-}

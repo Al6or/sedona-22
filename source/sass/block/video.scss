@@ -1,0 +1,31 @@
+.video{
+  font-family: 'PTSansWebRegular',Arial,sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+
+  background-color: $bg-main;
+  color: $ft-main;
+}
+
+.video__header{
+  padding: 0;
+  margin: 0;
+
+  font-family: 'PTSansWebBold',Arial,sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+
+  color: $ft-container;
+  text-transform: uppercase;
+}
+
+.video__text{
+  padding: 0;
+  margin: 0;
+
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 24px;
+
+  text-transform: uppercase;
+}
