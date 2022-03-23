@@ -1,10 +1,24 @@
 .hotel{
+  min-height: 637px;
+
+  width: 320px;
+  margin: 0 auto;
+
   font-family: 'PTSansWebRegular',Arial,sans-serif;
   font-size: 14px;
   line-height: 24px;
 
   background-color: $bg-hotel;
   color: $ft-hotel;
+}
+
+.hotel__description{
+  min-height: 205px;
+
+  padding-top: 33px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 49px;
 }
 
 .hotel__header{
@@ -65,4 +79,56 @@
   background-color: $bg-blue-disabled;
 
   color: $ft-blue-disabled;
+}
+
+.hotel__map{
+  width: 320px;
+  height: 350px;
+
+  display: block;
+
+  background-color: coral;
+}
+
+@media(min-width: $tablet-width){
+  .hotel{
+    min-height: 668px;
+
+    width: $tablet-width;
+    margin: 0 auto;
+  }
+
+  .hotel__description{
+    min-height: 202px;
+
+    padding:58px 155px;
+  }
+
+  .hotel__map{
+    width: $tablet-width;
+    height: 350px;
+  }
+}
+
+@media(min-width: $desctop-width){
+  .hotel{
+    min-height: 681px;
+
+    width: $desctop-width;
+    margin: 0 auto;
+  }
+
+  .hotel__description{
+    min-height: 207px;
+
+    padding-top: 58px;
+    padding-left: 371px;
+    padding-right: 371px;
+    padding-bottom: 66px;
+  }
+
+  .hotel__map{
+    width: $desctop-width;
+    height: 350px;
+  }
 }

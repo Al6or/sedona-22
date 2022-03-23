@@ -1,9 +1,23 @@
 .meaning{
+  width: 320px;
+  margin: 0 auto;
+
+  min-height: 221px;
+
   font-family: 'PTSansWebRegular',Arial,sans-serif;
   font-size: 14px;
   line-height: 26px;
 
   background-color: $bg-meaning;
+}
+
+.meaning__description{
+  padding-top: 46px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+
+  min-height: 145px;
 }
 
 .meaning__header{
@@ -27,4 +41,40 @@
 
   text-transform: uppercase;
   color: $ft-meaning-text;
+}
+
+@media (min-width: $tablet-width) {
+  .meaning{
+    width: $tablet-width;
+    margin: 0 auto;
+
+    min-height: 206px;
+  }
+
+  .meaning__description{
+    padding-top: 55px;
+    padding-left: 66px;
+    padding-right: 66px;
+    padding-bottom: 57px;
+
+    min-height: 94px;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .meaning{
+    width: $desctop-width;
+    margin: 0 auto;
+
+    min-height: 206px;
+  }
+
+  .meaning__description{
+    padding-top: 55px;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-bottom: 55px;
+
+    min-height: 96px;
+  }
 }

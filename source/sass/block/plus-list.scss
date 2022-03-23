@@ -18,3 +18,42 @@
   padding: 0;
   margin: 0;
 }
+
+@media(min-width: $tablet-width){
+  .plus-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .plus-list__item{
+    width: 163px;
+  }
+
+  .plus-list__item--eat{
+    order: 2;
+    width: 155px;
+  }
+
+  .plus-list__item--gift{
+    order: 3;
+  }
+}
+
+@media(min-width: $desctop-width){
+  .plus-list__item{
+    width: 163px;
+  }
+
+  .plus-list__item--house{
+    width: 252px;
+  }
+
+  .plus-list__item--eat{
+    width: 283px;
+  }
+
+  .plus-list__item--gift{
+    width: 214px;
+  }
+}

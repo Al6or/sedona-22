@@ -21,10 +21,7 @@
 }
 
 .represent__list{
-  padding: 0;
-  margin: 0;
-
-  list-style: none;
+  @include list-reset();
 }
 
 .represent__item input{

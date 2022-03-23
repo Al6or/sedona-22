@@ -1,9 +1,23 @@
-.page-footer__wrapper{
+.page-footer{
+  min-height: 243px;
+
+  width: 320px;
+  margin: 0 auto;
+
   font-family: 'PTSansWebRegular',Arial,sans-serif;
   font-size: 14px;
   line-height: 26px;
 
-  background-color: $bg-footer;
+  background-color: #fff;
+}
+
+.page-footer__wrapper{
+  padding-top: 41px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 23px;
+
+  min-height: 179px;
 }
 
 .page-footer__tags{
@@ -37,4 +51,34 @@
   background-color: $bg-blue-disabled;
 
   color: $ft-blue-disabled;
+}
+
+@media(min-width: $tablet-width){
+  .page-footer{
+    min-height: 120px;
+
+    width: $tablet-width;
+    margin: 0 auto;
+  }
+
+  .page-footer__wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding: 36px 60px;
+
+    min-height: 48px;
+  }
+}
+
+@media(min-width: $desctop-width){
+  .page-footer{
+    min-height: 120px;
+
+    width: $desctop-width;
+    margin: 0 auto;
+  }
+
+  .page-footer__wrapper{
+    padding: 36px 160px;
+  }
 }

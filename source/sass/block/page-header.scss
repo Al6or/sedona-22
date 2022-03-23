@@ -1,7 +1,53 @@
-.page-header__wrapper{
+.page-header{
+  min-height: 279px;
+
+  width: 320px;
+  margin: 0 auto;
+
   font-family: 'PTSansWebBold',Arial,sans-serif;
   font-size: 14px;
   line-height: 26px;
 
-  background-color: $bg-menu;
+  background-color: $bg-container;
+}
+
+.page-header__logo{
+  height: 83px;
+
+  text-align: center;
+}
+
+.page-header__logo-image{
+  height: 83px;
+  width: 102px;
+  display: block;
+
+  background-color: coral;
+}
+
+@media(min-width: $tablet-width){
+  .page-header{
+    min-height: 56px;
+
+    width: $tablet-width;
+    margin: 0 auto;
+
+  }
+  .page-header__logo-image{
+    height: 83px;
+    width: 102px;
+  }
+}
+
+@media(min-width: $desctop-width){
+  .page-header{
+    width: $desctop-width;
+    margin: 0 auto;
+
+  }
+
+  .page-header__logo-image{
+    height: 83px;
+    width: 102px;
+  }
 }

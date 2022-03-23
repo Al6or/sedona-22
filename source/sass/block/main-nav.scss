@@ -1,7 +1,10 @@
-.site-list{
-  padding: 0;
-  margin: 0;
-  list-style: none;
+.main-nav{
+  min-height: 223px;
+  background-color: $bg-main;
+}
+
+.main-nav__list{
+  @include list-reset();
 }
 
 .site-list__item a{
@@ -38,3 +41,4 @@
 .site-list__item a:visited:active{
   color: $ft-menu-active-down;
 }
+

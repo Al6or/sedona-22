@@ -1,8 +1,80 @@
 .bridge-devil{
+  min-height: 451px;
+
+  width: 320px;
+  margin: 0 auto;
+
   font-family: 'PTSansWebRegular',Arial,sans-serif;
   font-size: 14px;
   line-height: 21px;
 
   background-color: $bg-city;
   color: $ft-city-text;
+}
+
+.bridge-devil__description{
+  padding-top: 45px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 41px;
+
+  min-height: 105px;
+}
+
+.bridge-devil__image{
+  width: 320px;
+  height: 260px;
+
+  display: block;
+
+  background-color: #be4e45;
+}
+
+@media(min-width: $tablet-width){
+  .bridge-devil{
+    min-height: 256px;
+
+    width: $tablet-width;
+    margin: 0 auto;
+  }
+
+  .bridge-devil__wrapper{
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .bridge-devil__description{
+    width: 256px;
+
+    padding-top: 50px;
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-bottom: 40px;
+
+    min-height: 166px;
+  }
+
+  .bridge-devil__image{
+    flex-grow: 1;
+  }
+}
+
+@media(min-width: $desctop-width){
+  .bridge-devil{
+    min-height: 256px;
+
+    width: $desctop-width;
+    margin: 0 auto;
+  }
+
+  .bridge-devil__description{
+    width: 400px;
+
+    padding-top: 58px;
+    padding-left: 48px;
+    padding-right: 48px;
+    padding-bottom: 61px;
+
+    min-height: 137px;
+  }
 }
