@@ -58,7 +58,6 @@
     min-height: 120px;
 
     width: $tablet-width;
-    margin: 0 auto;
   }
 
   .page-footer__wrapper{
@@ -72,10 +71,7 @@
 
 @media(min-width: $desctop-width){
   .page-footer{
-    min-height: 120px;
-
     width: $desctop-width;
-    margin: 0 auto;
   }
 
   .page-footer__wrapper{

@@ -1,10 +1,25 @@
 .video{
+  min-height: 499px;
+
+  width: 320px;
+  margin: 0 auto;
+
   font-family: 'PTSansWebRegular',Arial,sans-serif;
   font-size: 14px;
   line-height: 24px;
 
-  background-color: $bg-main;
+  //background-color: $bg-main;
+  background-color: coral;
   color: $ft-main;
+}
+
+.video__wrapper{
+  padding-top: 39px;
+  padding-left: 42px;
+  padding-right: 40px;
+  padding-bottom: 39px;
+
+  min-height: 114px;
 }
 
 .video__header{
@@ -28,4 +43,84 @@
   line-height: 24px;
 
   text-transform: uppercase;
+}
+
+.video__poster{
+  width: 320px;
+  height: 201px;
+  display: block;
+
+  background-color: #ccc;
+}
+
+.video__controls{
+  margin-top: -45px;
+  padding: 0 20px;
+  position: relative;
+  z-index: 1;
+
+  min-height: 111px;
+
+  background-color: #f2f2f2;
+}
+
+@media (min-width: $tablet-width){
+  .video{
+    min-height: 784px;
+
+    width: $tablet-width;
+  }
+
+  .video__wrapper{
+    padding-top: 69px;
+    padding-left: 174px;
+    padding-right: 177px;
+    padding-bottom: 77px;
+
+    min-height: 98px;
+  }
+
+  .video__poster{
+    padding: 0 60px;
+    width: 648px;
+    height: 499px;
+  }
+
+  .video__controls{
+    margin-top: -92px;
+    padding: 0 60px;
+
+    min-height: 133px;
+  }
+}
+
+@media (min-width: $desctop-width){
+  .video{
+    min-height: 831px;
+
+    width: $desctop-width;
+  }
+
+  .video__wrapper{
+    padding-top: 73px;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-bottom: 75px;
+
+    min-height: 98px;
+  }
+
+  .video__poster{
+    padding: 0 200px;
+    width: 800px;
+    height: 500px;
+  }
+
+  .video__controls{
+    margin-top: -93px;
+    padding: 0 200px;
+    padding-bottom: 85px;
+
+    min-height: 93px;
+  }
 }

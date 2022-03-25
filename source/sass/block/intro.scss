@@ -29,21 +29,15 @@
 @media(min-width: $tablet-width){
   .intro{
     width: $tablet-width;
-    margin: 0 auto;
 
     min-height: 518px;
 
-    background-color: #4b8080;
     background-image: url('https://via.placeholder.com/768x518/3a4c4c');
-    background-repeat: no-repeat;
-    background-position: top;
   }
 
   .intro img{
     width: 460px;
     height: 350px;
-
-    display: block;
   }
 
   .intro__text-image{
@@ -57,12 +51,8 @@
 @media(min-width: $desctop-width){
   .intro{
     width: $desctop-width;
-    margin: 0 auto;
 
-    background-color: #4b8080;
     background-image: url('https://via.placeholder.com/1200x518/3a4c4c');
-    background-repeat: no-repeat;
-    background-position: top;
   }
 
   .intro__text-image{
