@@ -1,10 +1,9 @@
 .impress{
-    font-family: 'PTSansWebBold',Arial,sans-serif;
-    font-size: 18px;
-    line-height: 26px;
+  font-family: 'PTSansWebBold',Arial,sans-serif;
+  font-size: 18px;
+  line-height: 26px;
 
-    background-color: $bg-main;
-    color: $ft-container;
+  color: $ft-container;
 }
 
 .impress__header{
@@ -21,5 +20,3 @@
 .impress__list{
   @include list-reset();
 }
-
-

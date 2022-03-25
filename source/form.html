@@ -43,102 +43,111 @@
 
     <form action="https://echo.htmlacademy.ru" target="_blank">
 
-      <section class="intro">
-        <img class="intro__text-image" src="https://via.placeholder.com/229x39"
-          alt="Картинка. Стильное название проекта">
+      <section class="intro-short">
+        <img class="intro-short__text-image" src="https://via.placeholder.com/229x39"
+        alt="Картинка. Стильное название проекта">
       </section>
 
-      <section class="meaning">
-        <h2 class="meaning__header">Оставьте свой отзыв</h2>
-        <p class="meaning__text"> Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами
-          достопримечательностях</p>
+      <section class="meaning-other">
+        <div class="meaning-other__description">
+          <h2 class="meaning-other__header">Оставьте свой отзыв</h2>
+          <p class="meaning-other__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+       </div>
       </section>
 
       <section class="represent">
-       <div class="represent__turist-name">
-        <h2 class="represent__header">Представьтесь:</h2>
-        <ul class="represent__list">
-          <li class="represent__item">
-            <label for="id-first-name">Имя*:</label>
-            <input id="id-first-name" type="text" name="first-name" value="Петр">
-          </li>
-          <li class="represent__item">
-            <label for="id-second-name">Фамилия*:</label>
-            <input id="id-second-name" type="text" name="second-name" placeholder="Иванов">
-          </li>
-          <li class="represent__item">
-            <label for="id-last-name">Отчество:</label>
-            <input id="id-last-name" type="text" name="last-name" placeholder="Александрович">
-          </li>
-        </ul>
-       </div>
-        <div class="represent__contact">
-          <h2 class="represent__header">Контактная информация:</h2>
-          <ul class="represent__list">
-            <li class="represent__item represent__item--phone">
-              <label for="id-phone">Контактный телефон*:</label>
-              <input id="id-phone" type="text" name="phone" placeholder="Введите телефон">
+        <div class="represent__wrapper">
+          <div class="represent__turist turist">
+            <h2 class="turist__header">Представьтесь:</h2>
+            <ul class="turist__list">
+              <li class="turist__item">
+                <label for="id-first-name">Имя*:</label>
+                <input id="id-first-name" type="text" name="first-name" value="Петр">
+              </li>
+              <li class="turist__item">
+                <label for="id-second-name">Фамилия*:</label>
+                <input id="id-second-name" type="text" name="second-name" placeholder="Иванов">
+              </li>
+              <li class="turist__item">
+                <label for="id-last-name">Отчество:</label>
+                <input id="id-last-name" type="text" name="last-name" placeholder="Александрович">
+              </li>
+            </ul>
+           </div>
+
+            <div class="represent__contact contact">
+              <h2 class="contact__header">Контактная информация:</h2>
+              <ul class="contact__list">
+                <li class="contact__item contact__item--phone">
+                  <label for="id-phone">Контактный телефон*:</label>
+                  <input id="id-phone" type="text" name="phone" placeholder="Введите телефон">
+                </li>
+                <li class="contact__item contact__item--email">
+                  <label for="id-email">Электронная почта*:</label>
+                  <input id="id-email" type="text" name="email" value="Введите e-mail">
+                </li>
+              </ul>
+            </div>
+
+            <div class="represent__impress impress">
+              <div class="impress__wrapper">
+                <h2 class="impress__header">Ваше общее впечатление:</h2>
+                <ul class="impress__list">
+                  <li class="impress__item">
+                    <input class="visually-hidden" id="id-positive" type="radio" name="impress-review" value="positive">
+                    <label for="id-positive">Скорее положительное</label>
+                  </li>
+                  <li class="impress__item">
+                    <input class="visually-hidden" id="id-negative" type="radio" name="impress-review" value="negative">
+                    <label for="id-negative">Скорее отрицательное</label>
+                  </li>
+                  <li class="impress__item">
+                    <input class="visually-hidden" id="id-neutral" type="radio" name="impress-review" value="neutral">
+                    <label for="id-neutral">Затрудняюсь ответить</label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </div>
+      </section>
+
+      <section class="places-visited">
+        <div class="places-visited__wrapper">
+          <h2 class="places-visited__header">Посещенные достопримечательности:</h2>
+          <ul class="places-visited__list">
+            <li class="places-visited__item">
+              <input class="visually-hidden" id="id-devil-bridge" type="checkbox" name="devil-bridge" checked>
+              <label for="id-devil-bridge">Мост Дьявола</label>
             </li>
-            <li class="represent__item represent__item--email">
-              <label for="id-email">Электронная почта*:</label>
-              <input id="id-email" type="text" name="email" value="Введите e-mail">
+            <li class="places-visited__item">
+              <input class="visually-hidden" id="id-mount-bell" type="checkbox" name="mount-bell" checked>
+              <label for="id-mount-bell">Гора-Колокол</label>
+            </li>
+            <li class="places-visited__item">
+              <input class="visually-hidden" id="id-slide-park" type="checkbox" name="slide-park" checked>
+              <label for="id-slide-park">Слайд-парк</label>
+            </li>
+            <li class="places-visited__item">
+              <input class="visually-hidden" id="id-red-rocks" type="checkbox" name="red-rocks">
+              <label for="id-red-rocks">Красные скалы</label>
             </li>
           </ul>
         </div>
       </section>
 
-      <section class="impress">
-        <h2 class="impress__header">Ваше общее впечатление:</h2>
-        <ul class="impress__list">
-          <li class="impress__item">
-            <input class="visually-hidden" id="id-positive" type="radio" name="impress-review" value="positive">
-            <label for="id-positive">Скорее положительное</label>
-          </li>
-          <li class="contact__item">
-            <input class="visually-hidden" id="id-negative" type="radio" name="impress-review" value="negative">
-            <label for="id-negative">Скорее отрицательное</label>
-          </li>
-          <li class="contact__item">
-            <input class="visually-hidden" id="id-neutral" type="radio" name="impress-review" value="neutral">
-            <label for="id-neutral">Затрудняюсь ответить</label>
-          </li>
-        </ul>
-      </section>
-
-      <section class="places-visited">
-        <h2 class="places-visited__header">Посещенные достопримечательности:</h2>
-        <ul class="places-visited__list">
-          <li class="places-visited__item">
-            <input class="visually-hidden" id="id-devil-bridge" type="checkbox" name="devil-bridge" checked>
-            <label for="id-devil-bridge">Мост Дьявола</label>
-          </li>
-          <li class="places-visited__item">
-            <input class="visually-hidden" id="id-mount-bell" type="checkbox" name="mount-bell" checked>
-            <label for="id-mount-bell">Гора-Колокол</label>
-          </li>
-          <li class="places-visited__item">
-            <input class="visually-hidden" id="id-slide-park" type="checkbox" name="slide-park" checked>
-            <label for="id-slide-park">Слайд-парк</label>
-          </li>
-          <li class="places-visited__item">
-            <input class="visually-hidden" id="id-red-rocks" type="checkbox" name="red-rocks">
-            <label for="id-red-rocks">Красные скалы</label>
-          </li>
-        </ul>
-      </section>
-
       <section class="emotion">
+       <div class="emotion__wrapper">
         <h2 class="emotion__header">Опишите свои эмоции:</h2>
         <label class="visually-hidden" for="id-emotion-text">Поле с описанием ваших эмоций</label>
-        <textarea class="emotion__description" name="emotion-text" id="id-emotion-text" cols="30" rows="10"
-          placeholder="Опишите подробно все свои восторги "></textarea>
+        <textarea class="emotion__description" name="emotion-text" id="id-emotion-text" placeholder="Опишите подробно все свои восторги "></textarea>
         <button class="emotion__button emotion__button--blue">Отправить отзыв</button>
         <span class="emotion__bond">* — обязательные поля</span>
+       </div>
       </section>
     </form>
   </main>
 
-  <footer class="page-footer container">
+  <footer class="page-footer">
     <div class="page-footer__wrapper">
       <div class="page-footer__tags">
         #visitSEDONA
