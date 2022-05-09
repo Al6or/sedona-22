@@ -8,14 +8,27 @@
   font-size: 14px;
   line-height: 24px;
 
-  background-color: $bg-meaning;
+  background-color: #fff
 }
 
 .meaning-other__description{
-  padding-top: 44px;
-  padding-left: 22px;
-  padding-right: 20px;
-  padding-bottom: 34px;
+  padding: 24px 20px;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+
+  min-height: 111px;
+}
+
+.meaning-other__description--form{
+  padding: 24px 20px;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
 
   min-height: 111px;
 }
@@ -23,6 +36,8 @@
 .meaning-other__header{
   padding: 0;
   margin: 0;
+  margin-bottom: 24px;
+  margin-top: 15px;
 
   font-family: 'PTSansWebBold',Arial,sans-serif;
   font-size: 18px;
@@ -32,15 +47,31 @@
 }
 
 .meaning-other__text{
-  padding: 0;
-  margin: 0;
+  margin-top: 0;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 6px;
+
+  flex-grow: 1;
 
   font-family: inherit;
   font-size: 14px;
-  line-height: 26px;
+  line-height: 24px;
 
   text-transform: uppercase;
-  color: $ft-meaning-text;
+  color: #333;
+}
+
+.meaning-other__text--form{
+  margin: 0;
+  flex-grow: 1;
+
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 24px;
+
+  text-transform: uppercase;
+  color: #333;
 }
 
 @media (min-width: $tablet-width) {
@@ -51,25 +82,56 @@
   }
 
   .meaning-other__description{
-    padding: 75px 163px;
+    padding: 60px;
+  }
 
-    min-height: 98px;
+  .meaning-other__description--form{
+    padding: 60px;
+  }
+
+  .meaning-other__header{
+    margin-top: 14px;
+
+    font-size: 30px;
+  }
+
+  .meaning-other__text{
+    margin-left: 109px;
+    margin-right: 109px;
+    margin-top: 6px;
+  }
+
+  .meaning-other__text--form{
+    margin-top: 7px;
+    margin-left: 102px;
+    margin-right: 102px;
   }
 }
 
-@media (min-width: $desctop-width) {
+@media (min-width: $desktop-width) {
   .meaning-other{
-    width: $desctop-width;
-
-    min-height: 287px;
+    width: $desktop-width;
   }
 
   .meaning-other__description{
-    padding-top: 114px;
-    padding-left: 200px;
-    padding-right: 200px;
-    padding-bottom: 75px;
+    min-height: 167px;
+  }
 
-    min-height: 98px;
+  .meaning-other__description--form{
+    padding-bottom: 30px;
+  }
+
+  .meaning-other__header{
+    margin-top: 51px;
+  }
+
+  .meaning-other__text{
+    margin-left: 320px;
+    margin-right: 320px;
+  }
+
+  .meaning-other__text--form{
+    margin-left: 320px;
+    margin-right: 324px;
   }
 }

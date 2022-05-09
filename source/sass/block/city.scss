@@ -1,6 +1,4 @@
 .city{
-  min-height: 676px;
-
   width: 320px;
   margin: 0 auto;
 
@@ -8,17 +6,20 @@
   font-size: 14px;
   line-height: 21px;
 
-  background-color: $bg-city;
-  color: $ft-city-text;
+  background-color: #fff;
+  color: #333;
 }
 
 .city__description{
-  padding-top: 46px;
+  padding-top: 57px;
   padding-left: 20px;
   padding-right: 20px;
-  padding-bottom: 45px;
+  padding-bottom: 27px;
 
-  min-height: 120px;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
 }
 
 .city__image{
@@ -33,12 +34,9 @@
 .city__list{
   @include list-reset();
 
-  padding-top: 41px;
-  padding-left: 70px;
-  padding-right: 20px;
-  padding-bottom: 41px;
-
-  min-height: 334px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 @media(min-width: $tablet-width){
@@ -54,8 +52,12 @@
     min-height: 256px;
   }
 
+  .city__list{
+    flex-direction: row;
+  }
+
   .city__description{
-    width: 256px;
+    width: 166px;
   }
 
   .city__image{
@@ -66,33 +68,20 @@
   }
 
   .city__description{
-    padding-top: 50px;
+    padding-top: 45px;
     padding-left: 45px;
     padding-right: 45px;
-    padding-bottom: 48px;
-
-    min-height: 158px;
-  }
-
-  .city__list{
-    padding-top: 57px;
-    padding-left: 45px;
-    padding-right: 45px;
-    padding-bottom: 60px;
-
-    min-height: 213px;
+    padding-bottom: 30px;
   }
 }
 
-@media(min-width: $desctop-width){
+@media(min-width: $desktop-width){
   .city{
-    min-height: 586px;
-
-    width: $desctop-width;
+    width: $desktop-width;
   }
 
   .city__description{
-    width: 400px;
+    width: 310px;
   }
 
   .city__image {
@@ -101,20 +90,9 @@
   }
 
   .city__description{
-    padding-top: 57px;
+    padding-top: 52px;
     padding-left: 45px;
     padding-right: 45px;
-    padding-bottom: 60px;
-
-    min-height: 139px;
-  }
-
-  .city__list{
-    padding-top: 60px;
-    padding-left: 73px;
-    padding-right: 83px;
-    padding-bottom: 83px;
-
-    min-height: 187px;
+    padding-bottom: 58px;
   }
 }

@@ -11,32 +11,50 @@
 
   <header class="page-header">
     <div class="page-header__wrapper">
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--opened main-nav--nojs">
         <button class="main-nav__toggle" type="button">
-          Открыть меню
+          <span class="visually-hidden">Открыть меню</span>
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a>Главная</a>
+              <a class="site-list__link">Главная</a>
             </li>
             <li class="site-list__item">
-              <a href="photo.html">Фото и видео</a>
+              <a class="site-list__link" href="photo.html">Фото и видео</a>
             </li>
             <li class="site-list__item">
-              <a href="form.html">Форма и отзыва</a>
+              <a class="site-list__link" href="form.html">Форма отзыва</a>
             </li>
             <li class="site-list__item">
-              <a href="#">html academy</a>
+              <a class="site-list__link" href="#">html academy</a>
+            </li>
+            <li class="site-list__item--logo">
+              <a class="site-list__logo--link" href="#">
+                <img src="img/zag.jpg" alt="Логотип Седоны">
+              </a>
             </li>
           </ul>
         </div>
       </nav>
-      <a class="page-header__logo" href="#">
-        <img class="page-header__logo-image" src="https://via.placeholder.com/102x83" alt="Логотип Седоны">
-      </a>
     </div>
   </header>
+
+  <script>
+    var navMain = document.querySelector('.main-nav');
+    var navToggle = document.querySelector('.main-nav__toggle');
+
+    navMain.classList.remove('main-nav--nojs');
+    navToggle.addEventListener('click', function(){
+      if(navMain.classList.contains('main-nav--closed')){
+        navMain.classList.remove('main-nav--closed');
+        navMain.classList.add('main-nav--opened');
+      }else{
+        navMain.classList.add('main-nav--closed');
+        navMain.classList.remove('main-nav--opened');
+      }
+    });
+  </script>
 
   <main class="page-main">
 
@@ -44,7 +62,7 @@
 
     <section class="intro">
       <h2 class="visually-hidden">Что такое Седона</h2>
-      <img class="intro__text-image" src="https://via.placeholder.com/282x214"
+      <img class="intro__text-image" src="img/zag.jpg"
         alt="Картинка. Стильное название проекта и текст">
     </section>
 
@@ -63,7 +81,7 @@
           <span class="cause__number">№1</span>
           <p class="cause__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
         </div>
-        <img class="city__image" src="https://via.placeholder.com/320x260" alt="Картинка города Седона">
+        <img class="city__image" src="img/zag.jpg" alt="Картинка города Седона">
       </div>
       <ul class="city__list plus-list">
         <li class="plus-list__item plus-list__item--house">
@@ -76,7 +94,7 @@
         </li>
         <li class="plus-list__item plus-list__item--eat">
           <h3 class="plus-list__title">Еда</h3>
-          <p class="plus-list__description">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
+          <p class="plus-list__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
         </li>
       </ul>
     </section>
@@ -84,12 +102,12 @@
     <section class="bridge-devil">
       <h2 class="visually-hidden">Причина вторая</h2>
       <div class="bridge-devil__wrapper">
-        <div class="bridge-devil__description cause">
-          <h3 class="cause__header">Там есть мост дьявола</h3>
-          <span class="cause__number">№2</span>
-          <p class="cause__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+        <div class="bridge-devil__description">
+          <h3 class="bridge-devil__header">Там есть мост дьявола</h3>
+          <span class="bridge-devil__number">№2</span>
+          <p class="bridge-devil__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
         </div>
-        <img class="bridge-devil__image" src="https://via.placeholder.com/320x260" alt="Картинка моста дьявола">
+        <img class="bridge-devil__image" src="img/zag.jpg" alt="Картинка моста дьявола">
       </div>
     </section>
 
@@ -97,19 +115,19 @@
       <h2 class="visually-hidden">Остальные причины</h2>
       <ul class="others-causes__list">
         <li class="others-causes__item">
-          <h3 class="others-causes__header">Небольшая площадь</h3>
-          <span class="others-causes__number">№3</span>
-          <p class="others-causes__text">Все интересные места находятся очень близко</p>
+          <h3 class="others-causes__header item-third__header">Небольшая площадь</h3>
+          <span class="others-causes__number item-third__number">№3</span>
+          <p class="others-causes__text item-third__text">Все интересные места находятся очень близко</p>
         </li>
         <li class="others-causes__item">
-          <h3 class="others-causes__header">Красивая дорога</h3>
-          <span class="others-causes__number">№4</span>
-          <p class="others-causes__text">Ехать в седону из лас-вегаса совсем не скучно!</p>
+          <h3 class="others-causes__header item-fourth__header">Красивая дорога</h3>
+          <span class="others-causes__number item-fourth__number">№4</span>
+          <p class="others-causes__text item-fourth__text">Ехать в седону из лас-вегаса совсем не скучно!</p>
         </li>
         <li class="others-causes__item">
-          <h3 class="others-causes__header">Мало туристов</h3>
-          <span class="others-causes__number">№5</span>
-          <p class="others-causes__text">Большинство едет в гранд каньон и толпится там</p>
+          <h3 class="others-causes__header item-fifth__header">Мало туристов</h3>
+          <span class="others-causes__number item-fifth__number">№5</span>
+          <p class="others-causes__text item-fifth__text">Большинство едет в гранд каньон и толпится там</p>
         </li>
       </ul>
     </section>
@@ -123,7 +141,7 @@
             и мы покажем вам лучшие предложения гостиниц в седоне</p>
           <button class="hotel__button hotel__button--blue">Найти гостиницу</button>
         </div>
-        <img class="hotel__map" src="https://via.placeholder.com/320x350" alt="Картинка с картой">      </div>
+        <img class="hotel__map" src="img/zag.jpg" alt="Картинка с картой">      </div>
      </section>
   </main>
 
@@ -132,22 +150,27 @@
       <div class="page-footer__tags">
         #visitSEDONA
       </div>
-      <div class="page-footer__social social">
+      <div class="page-footer__social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--vkontakte social__link--blue" href="">Мы в Вконтакте</a>
+            <a class="social__link social__link--vkontakte social__link--blue" href="">
+              <span class="visually-hidden">Мы в Вконтакте</span></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook social__link--blue" href="">Мы в Фейсбук</a>
+            <a class="social__link social__link--facebook social__link--blue" href="">
+              <span class="visually-hidden">Мы в Фейсбук</span>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--instagram social__link--blue" href="">Мы в Инстаграм</a>
+            <a class="social__link social__link--instagram social__link--blue" href="">
+              <span class="visually-hidden">Мы в Инстаграм</span>
+            </a>
           </li>
         </ul>
       </div>
       <div class="page-footer__dev dev">
         <p class="dev__text">Разработано</p>
-        <img class="dev__logo" src="https://via.placeholder.com/27x34" alt="Логотип организации">
+        <img class="dev__logo" src="img/zag.jpg" alt="Логотип организации">
       </div>
     </div>
   </footer>

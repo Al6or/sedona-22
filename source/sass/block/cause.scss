@@ -3,13 +3,13 @@
   font-size: 14px;
   line-height: 21px;
 
-  background-color: $bg-cause;
-  color: $ft-cause;
+  background-color: #81b3d2;
+  color: #fff;
 }
 
 .cause__header{
-  padding: 0;
   margin: 0;
+  margin-bottom: 8px;
 
   font-family: 'PTSansWebBold',Arial,sans-serif;
   font-size: 18px;
@@ -21,3 +21,32 @@
 .cause__text{
   text-transform: uppercase;
 }
+
+@media (min-width: $tablet-width) {
+  .cause__header{
+    margin-bottom: 9px;
+
+    font-size: 21px;
+    line-height: 26px;
+  }
+
+  .cause__number{
+    margin-bottom: 8px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .cause__header{
+    margin: 0px 47px;
+    margin-bottom: 11px;
+  }
+
+  .cause__number{
+    margin-bottom: 20px;
+  }
+
+  .cause__text{
+    margin: 0px 21px;
+  }
+}
+

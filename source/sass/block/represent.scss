@@ -2,95 +2,74 @@
   width: 320px;
   margin: 0 auto;
 
-  min-height: 880px;
-
   font-family: 'PTSansWebRegular',Arial,sans-serif;
   font-size: 14px;
   line-height: 26px;
 
-  background-color: $bg-main;
-  color: $ft-main;
+  background-color: #fff;
+  color: #333;
 }
 
 .represent__wrapper{
-  padding-top: 24px;
   padding-left: 20px;
   padding-right: 20px;
-  padding-bottom: 28px;
-
-  min-height: 828px;
 }
 
 .represent__turist{
-  min-height: 306px;
+  padding-top: 14px;
+  padding-bottom: 26px;
 }
 .represent__contact{
-  min-height: 287px;
+  padding: 17px 0;
 }
 .represent__impress{
-  min-height: 289px;
+  padding-top: 18px;
+  padding-bottom: 21px;
 }
 
 @media (min-width: $tablet-width){
   .represent{
     width: $tablet-width;
-    min-height: 675px;
   }
 
   .represent__wrapper{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 
-    padding-top: 10px;
     padding-left: 60px;
     padding-right: 60px;
-    padding-bottom: 48px;
-
-    min-height: 617px;
   }
 
-
   .represent__impress{
-    min-height: 357px;
-
     width: 50%;
+    flex-grow: 1;
     order: 1;
   }
 
   .represent__turist{
-    min-height: 357px;
-
-    flex-grow: 1;
+    width: 50%;
     order: 2;
   }
   .represent__contact{
-    min-height: 260px;
-
+    padding: 25px 0;
     flex-grow: 1;
     order: 3;
   }
 }
 
-@media (min-width: $desctop-width){
+@media (min-width: $desktop-width){
   .represent{
-    width: $desctop-width;
-    min-height: 576px;
+    width: $desktop-width;
   }
 
   .represent__wrapper{
-    padding-top: 10px;
     padding-left: 120px;
     padding-right: 120px;
-    padding-bottom: 48px;
-
-    min-height: 518px;
   }
 
   .represent__impress,
   .represent__turist{
     min-height: 355px;
-  }
-  .represent__contact{
-    min-height: 163px;
   }
 }

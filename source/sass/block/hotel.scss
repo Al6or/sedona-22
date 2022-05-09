@@ -8,17 +8,21 @@
   font-size: 14px;
   line-height: 24px;
 
-  background-color: $bg-hotel;
-  color: $ft-hotel;
+  background-color: #fff;
+  color: #000
 }
 
 .hotel__description{
-  min-height: 205px;
+  min-height: 211px;
 
-  padding-top: 33px;
+  padding-top: 28px;
   padding-left: 20px;
   padding-right: 20px;
-  padding-bottom: 49px;
+  padding-bottom: 48px;
+
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
 .hotel__header{
@@ -33,19 +37,19 @@
 }
 
 .hotel__text{
-  padding: 0;
-  margin: 0;
+  margin-top: 19px;
+  flex-grow: 1;
 
   font-family: inherit;
   font-size: 14px;
   line-height: 24px;
 
-  color: $ft-hotel-text;
+  color: #333;
   text-transform: uppercase;
 }
 
 .hotel__button{
-  padding: 0;
+  padding: 17px;
   margin: 0;
 
   font-family: 'PTSansWebBold',Arial,sans-serif;
@@ -57,28 +61,28 @@
 }
 
 .hotel__button--blue{
-  background-color: $bg-blue;
+  background-color: #81b3d2;
 
-  color: $ft-blue;
+  color: #fff;
 }
 
 .hotel__button--blue:hover,
 .hotel__button--blue:focus{
-  background-color: $bg-blue-hover;
+  background-color: #669ec0;
 
-  color:$ft-blue-hover;
+  color:#fff;
 }
 
 .hotel__button--blue:active{
-  background-color: $bg-blue-down;
+  background-color: #5496bd;
 
-  color: $ft-blue-down;
+  color: #88b6d1;
 }
 
 .hotel__button--blue:disabled{
-  background-color: $bg-blue-disabled;
+  background-color: #e5e5e5;
 
-  color: $ft-blue-disabled;
+  color: #fff;
 }
 
 .hotel__map{
@@ -99,9 +103,27 @@
   }
 
   .hotel__description{
-    min-height: 202px;
+    min-height: 268px;
 
-    padding:58px 155px;
+    padding: 25px;
+  }
+
+  .hotel__header{
+    margin-top: 30px;
+    margin-bottom: 12px;
+
+    font-size: 30px;
+  }
+
+  .hotel__text{
+    margin-left: 120px;
+    margin-right: 120px;
+  }
+
+  .hotel__button{
+    width: 458px;
+    margin: auto;
+    margin-bottom: 32px;
   }
 
   .hotel__map{
@@ -110,25 +132,26 @@
   }
 }
 
-@media(min-width: $desctop-width){
+@media(min-width: $desktop-width){
   .hotel{
     min-height: 681px;
 
-    width: $desctop-width;
+    width: $desktop-width;
     margin: 0 auto;
   }
 
-  .hotel__description{
-    min-height: 207px;
+  .hotel__text{
+    margin-left: 300px;
+    margin-right: 300px;
+  }
 
-    padding-top: 58px;
-    padding-left: 371px;
-    padding-right: 371px;
-    padding-bottom: 66px;
+  .hotel__button{
+    margin-top:32px;
+    margin-bottom: 40px;
   }
 
   .hotel__map{
-    width: $desctop-width;
+    width: $desktop-width;
     height: 350px;
   }
 }

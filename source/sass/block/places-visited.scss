@@ -2,23 +2,19 @@
   width: 320px;
   margin: 0 auto;
 
-  min-height: 409px;
-
   font-family: 'PTSansWebBold',Arial,sans-serif;
   font-size: 18px;
   line-height: 26px;
 
-  background-color: $bg-main;
-  color: $ft-container;
+  background-color: #fff;
+  color: #000;
 }
 
 .places-visited__wrapper{
-  padding-top: 24px;
+  padding-top: 18px;
   padding-left: 20px;
   padding-right: 20px;
-  padding-bottom: 30px;
-
-  min-height: 354px;
+  padding-bottom: 13px;
 }
 
 .places-visited__header{
@@ -30,40 +26,122 @@
   line-height: 26px;
 
   text-transform: uppercase;
+  text-align: center
 }
 
 .places-visited__list{
   @include list-reset();
+
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.places-visited__item{
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.places-visited__label{
+  padding-top: 15px;
+  padding-left: 79px;
+  padding-bottom: 15px;
+
+  flex-grow: 1;
+}
+
+@media(max-width: $mobile-width-only){
+  .places-visited__item:nth-last-child(1){
+    margin-bottom: 0;
+  }
 }
 
 @media (min-width: $tablet-width){
   .places-visited{
     width: $tablet-width;
-    min-height: 306px;
   }
 
   .places-visited__wrapper{
-    padding-top: 10px;
+    padding-top: 0;
     padding-left: 60px;
     padding-right: 60px;
-    padding-bottom: 63px;
+    padding-bottom: 0;
 
-    min-height: 233px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .places-visited__header{
+    margin: 5px 117px;
+
+    text-align: center;
+    font-size: 21px;
+  }
+
+  .places-visited__list{
+    margin-top: 36px;
+
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  @media(max-width: $tablet-width-only){
+    .places-visited__item{
+      margin-bottom: 32px;
+      width: 324px;
+    }
+
+    .places-visited__item:nth-child(odd) .places-visited__label{
+      margin-left: 95px;
+    }
+
+    .places-visited__item:nth-child(even) .places-visited__label{
+      margin-left: 32px;
+    }
   }
 }
 
-@media (min-width: $desctop-width){
+@media (min-width: $desktop-width){
   .places-visited{
-    width: $desctop-width;
-    min-height: 216px;
+    width: $desktop-width;
   }
 
   .places-visited__wrapper{
-    padding-top: 10px;
     padding-left: 120px;
     padding-right: 120px;
-    padding-bottom: 61px;
+  }
 
-    min-height: 145px;
+  .places-visited__list{
+    justify-content: space-between;
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+
+  .places-visited__item{
+    margin-right: 24px;
+  }
+
+  .places-visited__item:nth-last-child(1){
+    margin-right: 0;
+  }
+
+  .places-visited__header{
+    margin-left: 286px;
+    margin-right: 284px;
+  }
+
+  .places-visited__label{
+    position: relative;
+  }
+
+  .places-visited__label::before{
+    content: "";
+    position: absolute;
+    width: 56px;
+    height: 56px;
+
+    top: 0;
+    left: 0;
+    background-color: red;
   }
 }

@@ -1,7 +1,26 @@
 .dev{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
   font-family: 'PTSansWebRegular',Arial,sans-serif;
   font-size: 14px;
   line-height: 26px;
 
   text-transform: uppercase;
+}
+
+.dev__logo{
+  margin-top: 14px;
+
+  width: 27px;
+  height: 34px;
+}
+
+.dev__text{
+  margin-top: 16px;
+  margin-right: 13px;
+}
+
+@media(min-width: $tablet-width){
 }
